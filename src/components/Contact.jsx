@@ -1,11 +1,13 @@
 import React from 'react';
 import contactImg from '../assets/contact-img.svg';
-import UseForm from './Validation/FormData';
+import UseFormData from './Validation/UseFormData';
+
 
 
 const Contact = () => {
 
-    let { errors, formValidation, formSubmit } = UseForm()
+    let { formSubmit, formValidation, errors } = UseFormData()
+
 
     return (
         <>
