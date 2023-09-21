@@ -3,6 +3,7 @@ import React, { useState } from 'react';
 import Projects1 from './Projects1';
 import Projects2 from './Projects2';
 import Projects3 from './Projects3';
+import Video from '../Video';
 
 const Projects = () => {
 
@@ -28,8 +29,8 @@ const Projects = () => {
 
 
                     <div className='lg:flex lg:justify-center lg:items-center mt-12 mb-4 cursor-pointer sm:block'>
-                        <div onClick={() => updateActiveLink('projects1')} className={activeLink === 'projects1' ? 'rounded-full my-0.5 border-2 lg:rounded-l-full lg:rounded-r-none px-28 py-4 background' : 'rounded-full my-0.5 border-2 lg:rounded-l-full lg:rounded-r-none px-28 py-4'}>Projects 1</div>
-                        <div onClick={() => updateActiveLink('projects2')} className={activeLink === 'projects2' ? 'rounded-full my-0.5 lg:rounded-none border-2 px-28 py-4 background' : 'rounded-full lg:rounded-none my-0.5 border-2 px-28 py-4'}>Projects 2</div>
+                        <div onClick={() => updateActiveLink('projects1')} className={activeLink === 'projects1' ? 'rounded-full my-0.5 border-2 lg:rounded-l-full lg:rounded-r-none px-28 py-4 background' : 'rounded-full my-0.5 border-2 lg:rounded-l-full lg:rounded-r-none px-28 py-4'}>React Projects</div>
+                        <div onClick={() => updateActiveLink('projects2')} className={activeLink === 'projects2' ? 'rounded-full my-0.5 lg:rounded-none border-2 px-28 py-4 background' : 'rounded-full lg:rounded-none my-0.5 border-2 px-28 py-4'}>JavaScript Projects</div>
                         <div onClick={() => updateActiveLink('projects3')} className={activeLink === 'projects3' ? 'rounded-full my-0.5 border-2 lg:rounded-r-full lg:rounded-l-none px-28 py-4 background' : 'rounded-full my-0.5 border-2 lg:rounded-r-full lg:rounded-l-none px-28 py-4'}>Projects 3</div>
                     </div>
 
@@ -37,9 +38,12 @@ const Projects = () => {
                     {activeLink === 'projects2' && <Projects2 />}
                     {activeLink === 'projects3' && <Projects3 />}
 
-
+                    <div className='lg:w-3/4 w-[95%] mx-auto'>
+                        <Video />
+                    </div>
 
                 </div>
+
 
             </section>
         </>

@@ -3,6 +3,7 @@ import passwordGenerater from '../../assets/Password-generater.PNG';
 import jokesGenerater from '../../assets/jokes-generater.PNG';
 import imagesGallery from '../../assets/images-gallery.PNG';
 import colorPicker from '../../assets/color-picker.PNG';
+import todo from '../../assets/todo.PNG';
 
 
 
@@ -37,6 +38,12 @@ const ProjectCard = [
         title: 'The Color Picker',
         imgsrc: colorPicker,
         url: 'https://developer0000000.github.io/ColorPicker/',
+    },
+    {
+        id: 5,
+        title: 'The Todo-List App',
+        imgsrc: todo,
+        url: 'https://developer0000000.github.io/TodoListApp/',
     },
 
 ];
